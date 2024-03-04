@@ -18,6 +18,7 @@ namespace Seguimiento_peliculas.Interface
             return new MySqlConnection(_configuration.ConnectionString);
         }
 
+
         public async Task<List<SeriePelicula>> GetAllSerieMovie()
         {
             var db = dbConnection();
